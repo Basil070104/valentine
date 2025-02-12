@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Yes button click event
   document.querySelector('.button_content .button:first-child').addEventListener('click', function () {
-    document.getElementById('blastoiseImage').src = '/gifs/nanami-touch.gif'; // Change to your new image path
-    document.getElementById('yippee').src = '/gifs/yippee-cat.gif';
-    document.getElementById('pika').src = '/gifs/pika-giphy.gif';
+    document.getElementById('blastoiseImage').src = './gifs/nanami-touch.gif'; // Change to your new image path
+    document.getElementById('yippee').src = './gifs/yippee-cat.gif';
+    document.getElementById('pika').src = '//gifs/pika-giphy.gif';
     document.getElementById('yippee').style.display = 'block';
     document.getElementById('pika').style.display = 'block';
     document.querySelector('.title').textContent = "GET READY TO BE WINE AND DINED. UR MINNNEEE NOW!!!!"; // Change title text for Yes
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // No button click event
   document.querySelector('.button_content .button:nth-child(2)').addEventListener('click', function () {
-    document.getElementById('blastoiseImage').src = '/gifs/rage-frustration.gif';
+    document.getElementById('blastoiseImage').src = './gifs/rage-frustration.gif';
     document.querySelector('.title').textContent = "U DONT WANT ME :( TRY AGAIN";
     document.getElementById('yippee').style.display = 'none';
     document.getElementById('yes').style.width = '300px'
