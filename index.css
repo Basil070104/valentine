@@ -1,0 +1,83 @@
+.body
+{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+  background-image: url(/images/image.png);
+}
+
+.button
+{
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 30px;
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 35%;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title
+{
+  font-size: 2.5em;
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  font-weight:900;
+}
+
+.button:hover
+{
+  background-color: #ff4d4d; /* Darker shade on hover */
+}
+
+.button_content
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 7s forwards;
+  width: 100%;
+  height: 50%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%); /* Start from below the viewport */
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    transform: translateY(0); /* End at its original position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+#yippee {
+  display: none; /* Hide the second image by default */
+}
+
+#pika {
+  display: none; /* Hide the second image by default */
+}
